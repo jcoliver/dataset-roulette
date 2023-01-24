@@ -4,13 +4,13 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Who are we?\nWe are a group of data science educators, based at the University of Arizona. We all generally have jobs where we both teach and do things with data and wanted to provide an opportunity outside of the classroom and workshop settings for people to learn about how we do the data voodoo."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "dataset-roulette",
+    "title": "Dataset Roulette",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "This is the website for Dataset Roulette, an informal opportunity to see how data professionals actually deal with, well, data. Working with a dataset that they’ve never seen before, a data scientist/engineer/wrangler/enthusiast will explore, analyze, and visualize data using open source software. We will post links to datasets here, and if we can get our act together, recordings of our attempts to wring meaning from data."
   }
 ]

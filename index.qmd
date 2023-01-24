@@ -1,11 +1,14 @@
 ---
-title: "dataset-roulette"
+title: "Dataset Roulette"
+image: logo.png
+about: 
+  template: jolla
+  image-shape: rounded
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+This is the website for _Dataset Roulette_, an informal opportunity to see how
+data professionals actually deal with, well, data. Working with a dataset that 
+they've never seen before, a data scientist/engineer/wrangler/enthusiast will 
+explore, analyze, and visualize data using open source software. We will post 
+links to datasets here, and if we can get our act together, recordings of our 
+attempts to wring meaning from data.

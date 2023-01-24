@@ -1,9 +1,12 @@
 ---
 title: "About"
+about: 
+  template: jolla
 ---
 
-About this site
+Who are we?
 
-```{r}
-1 + 1
-```
+We are a group of data science educators, based at the University of Arizona. 
+We all generally have jobs where we both teach and do things with data and 
+wanted to provide an opportunity outside of the classroom and workshop settings
+for people to learn about how we do the data voodoo.

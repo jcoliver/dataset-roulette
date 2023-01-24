@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "dataset-roulette"
+  title: "Dataset Roulette"
   navbar:
     left:
       - href: index.qmd
@@ -12,7 +12,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: sandstone
     css: styles.css
     toc: true
 
