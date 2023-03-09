@@ -6,9 +6,9 @@ about:
   image-shape: rounded
 ---
 
-This is the website for _Dataset Roulette_, an informal opportunity to see how
-data professionals actually deal with, well, data. Working with a dataset that 
-they've never seen before, a data scientist/engineer/wrangler/enthusiast will 
+This is the website for *Dataset Roulette*, an informal opportunity to see how 
+data professionals actually deal with, well, data. Working with a dataset that
+they've never seen before, a data scientist/engineer/wrangler/enthusiast will
 explore, analyze, and visualize data using open source software. We will post 
-links to datasets here, and if we can get our act together, recordings of our 
+links to datasets here, and if we can get our act together, recordings of our
 attempts to wring meaning from data.

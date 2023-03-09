@@ -9,6 +9,8 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - href: data_code.qmd
+        text: "Data & Code"
 
 format:
   html:
@@ -16,5 +18,5 @@ format:
     css: styles.css
     toc: true
 
-editor: visual
+editor: source
 

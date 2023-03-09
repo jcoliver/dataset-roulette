@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "data_code.html",
+    "href": "data_code.html",
+    "title": "Data & Code",
+    "section": "",
+    "text": "These are example datasets that we have used in our Dataset Roulette sessions. We will add more as they come along!\n\n\n\nDate\nName\nData\nData Source\nCode\n\n\n\n\n2023-02-15\nTuskegee Airmen\nCSV\nTidy Tuesday\nR Script\n\n\n2023-03-15\nComing soon!\nComing soon!\nComing soon!\nPython Script"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",

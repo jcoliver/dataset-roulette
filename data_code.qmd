@@ -1,0 +1,13 @@
+---
+title: "Data & Code"
+about: 
+  template: jolla
+---
+
+These are example datasets that we have used in our *Dataset Roulette* 
+sessions. We will add more as they come along!
+
+| Date | Name | Data | Data Source | Code |
+|:-----|:----:|:----:|:----:|:----:|
+| 2023-02-15 | Tuskegee Airmen | [CSV](https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-02-08/airmen.csv) | [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-02-08) | [R Script](www/airmen-data-visulization.R) |
+| 2023-03-15 | Coming soon! | Coming soon! | Coming soon! | Python Script |
