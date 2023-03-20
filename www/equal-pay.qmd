@@ -1,0 +1,77 @@
+---
+title: "Equal Pay data"
+format:
+  html:
+    df-print: paged
+editor: source
+---
+
+```{r}
+library(tidyverse)
+```
+
+# Read the data in
+
+```{r}
+equal_pay <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-03-05/jobs_gender.csv")
+```
+
+# Explore data
+
+```{r}
+equal_pay %>% # pipe, "and then"
+  count(year)
+```
+
+# Box plot
+
+```{r}
+equal_pay %>% 
+  ggplot(aes(y = major_category,
+             x = percent_female)) +
+  geom_boxplot()
+```
+
+# Bar plot
+
+```{r}
+mean_female_per_category <- equal_pay %>% 
+  group_by(major_category) %>% 
+  summarize(mean = mean(percent_female))
+
+mean_female_per_category
+```
+
+
+```{r}
+mean_female_per_category %>% 
+  ggplot(aes(y = reorder(major_category, mean),
+             x = mean,
+             label = round(mean, 2))) +
+  geom_col() +
+  geom_label()
+```
+# Scatterplot
+
+```{r}
+equal_pay %>% 
+  ggplot(aes(x = percent_female,
+             y = wage_percent_of_male,
+             color = major_category)) +
+  geom_point()
+```
+
+```{r}
+equal_pay %>% 
+  filter(major_category == "Computer, Engineering, and Science") %>% 
+  ggplot(aes(x = factor(year),
+             y = percent_female,
+             color = factor(year))) +
+  geom_jitter() +
+  labs(x = "year",
+       y = "percent female",
+       color = "year") +
+  theme_linedraw()
+```
+
+

@@ -10,4 +10,4 @@ sessions. We will add more as they come along!
 | Date | Name | Data | Data Source | Code |
 |:-----|:----:|:----:|:----:|:----:|
 | 2023-02-15 | Tuskegee Airmen | [CSV](https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-02-08/airmen.csv) | [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-02-08) | [R Script](www/airmen-data-visulization.R) |
-| 2023-03-15 | Coming soon! | Coming soon! | Coming soon! | Python Script |
+| 2023-03-15 | Jobs & Gender | [CSV](https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-03-05/jobs_gender.csv) | [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-03-05) | [Quarto (R) doc](www/equal-pay.qmd), [Jupyter Notebook](www/equal-pay.ipynb) |
