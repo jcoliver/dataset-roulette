@@ -1,5 +1,20 @@
 # Potential datasets
 
+## April 19, 2023
+
++ PFW_2021_public.csv (Feeder watch)
+  + https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-01-10
+  + data: feederwatch <- https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-01-10/PFW_2021_public.csv
++ bob_ross.csv (Bob Ross paintings)
+  + https://github.com/rfordatascience/tidytuesday/blob/master/data/2023/2023-02-21/readme.md
+  + data: https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-02-21/bob_ross.csv
++ egg-production.csv (Egg production)
+  + https://github.com/rfordatascience/tidytuesday/blob/master/data/2023/2023-04-11/readme.md
+  + data: https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-04-11/egg-production.csv
++ numbats.csv (Numbats)
+  + https://github.com/rfordatascience/tidytuesday/blob/master/data/2023/2023-03-07/readme.md
+  + data: https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-03-07/numbats.csv
+
 ## March 15, 2023
 
 + board_games.csv (Board Games)
