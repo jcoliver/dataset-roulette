@@ -4,10 +4,45 @@ about:
   template: jolla
 ---
 
+```{r library-setup, echo = FALSE}
+suppressPackageStartupMessages(library(dplyr)) # data wrangling
+suppressPackageStartupMessages(library(knitr)) # for kable
+```
+
+
 These are example datasets that we have used in our *Dataset Roulette* 
 sessions. We will add more as they come along!
 
-| Date | Name | Data | Data Source | Code |
-|:-----|:----:|:----:|:----:|:----:|
-| 2023-02-15 | Tuskegee Airmen | [CSV](https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-02-08/airmen.csv) | [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-02-08) | [R Script](www/airmen-data-visulization.R) |
-| 2023-03-15 | Jobs & Gender | [CSV](https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-03-05/jobs_gender.csv) | [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-03-05) | [Quarto (R) doc](www/equal-pay.qmd), [Jupyter Notebook](www/equal-pay.ipynb) |
+```{r code-data-table, echo = FALSE, results = "as-is"}
+# Add entries as row to code-data.csv
+code_data <- read.csv(file = "code-data.csv")
+
+# Need to format stuff for hyperlinking
+cd_table <- code_data %>%
+  # Add hyperlinks for data and data source
+  mutate(data = paste0("[", data_format, "](", 
+                       data_url, ")"),
+         data_source = paste0("[", data_source_name, "](", 
+                              data_source_url, ")")) %>%
+  # Add hyperlinks to R and/or Python code
+  mutate(r_code = if_else(!is.na(r_code), 
+                          true = paste0("[R code](", 
+                                        r_code, ")"),
+                          false = "")) %>%
+  mutate(python_code = if_else(!is.na(python_code), 
+                          true = paste0("[Python code](", 
+                                        python_code, ")"),
+                          false = "")) %>%
+  mutate(youtube = paste0("[Watch](", 
+                          youtube, ")")) %>%
+  select(date, name, data, data_source, r_code, python_code, youtube)
+
+# Clean up column names for humans
+colnames(cd_table) <- tools::toTitleCase(tolower(colnames(cd_table)))
+colnames(cd_table) <- gsub(x = colnames(cd_table), 
+                           pattern = "_",
+                           replacement = " ")
+cd_table <- cd_table %>%
+  rename(YouTube = Youtube)
+kable(x = cd_table)
+```

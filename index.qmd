@@ -9,6 +9,6 @@ about:
 This is the website for *Dataset Roulette*, an informal opportunity to see how 
 data professionals actually deal with, well, data. Working with a dataset that
 they've never seen before, a data scientist/engineer/wrangler/enthusiast will
-explore, analyze, and visualize data using open source software. We will post 
-links to datasets here, and if we can get our act together, recordings of our
-attempts to wring meaning from data.
+explore, analyze, and visualize data using open source software. Look at the 
+[Data & Code](data_code.html) section for links to datasets, code, and
+recordings of us trying to wring meaning from data.
