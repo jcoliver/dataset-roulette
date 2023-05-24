@@ -35,7 +35,8 @@ cd_table <- code_data %>%
                           false = "")) %>%
   mutate(youtube = paste0("[Watch](", 
                           youtube, ")")) %>%
-  select(date, name, data, data_source, r_code, python_code, youtube)
+  mutate(presenter = paste0("[", presenter, "](", presenter_url, ")")) %>%
+  select(date, presenter, name, data, data_source, r_code, python_code, youtube)
 
 # Clean up column names for humans
 colnames(cd_table) <- tools::toTitleCase(tolower(colnames(cd_table)))
